@@ -1,8 +1,7 @@
 .header {
-  padding: 92px 24px;
+  padding: 99px 24px 93px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  background-color: beige;
 }
 
 .header__links-list {
