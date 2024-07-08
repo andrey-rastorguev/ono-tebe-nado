@@ -1,7 +1,7 @@
 .header {
   padding: 92px 24px 92px;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr min-content 1fr;
 }
 
 .header__links-list {
@@ -21,7 +21,7 @@
   line-height: 21.13px;
 }
 
-.header__links-list-item_no-bullit {
+.header__links-list-item:first-child {
   list-style-type: none;
 }
 
@@ -56,7 +56,7 @@
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
-  line-height: 24.3px;
+  line-height: 1.35;
   letter-spacing: 1%;
 }
 
@@ -126,6 +126,8 @@
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
+  background-position: center;
+  background-size: cover;
   position: absolute;
   inset: 0;
 }
@@ -162,21 +164,25 @@
 
 .lots__card-list-item {
   flex-grow: 1;
+  width: 430px;
+  min-height: 450px;
 }
 
 .card-link {
   display: block;
   text-decoration: none;
-  width: 334px;
-  height: 563px;
+  height: 100%;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 50px 40px;
   position: relative;
-  width: 100%;
+  background-position: center;
+  background-size: cover;
+  color: white;
   height: 100%;
 }
 
@@ -185,8 +191,6 @@
   font-size: 22px;
   font-weight: 700;
   line-height: 26px;
-  padding: 51px 40px 0 40px;
-  color: white;
   z-index: 1;
  }
 
@@ -198,10 +202,6 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 48px;
-  color: white;
   z-index: 1;
  }
 
@@ -257,7 +257,7 @@
   width: 240px;
   height: 240px;
   background-color: black;
-  border-radius: 120px;
+  border-radius: 50%;
   margin-left: 47px;
 }
 
@@ -288,8 +288,8 @@
  }
 
  .footer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
   padding: 180px 50px 88px 50px;
  }
 
@@ -313,7 +313,9 @@
  }
 
  .footer__social-list {
+  justify-self: end;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   column-gap: 48px;
 }
@@ -324,4 +326,8 @@
 
  .footer__social-icon {
   width: 48px;
+ }
+
+ .footer .address_wrap {
+  justify-self: start;
  }
