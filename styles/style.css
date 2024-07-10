@@ -240,7 +240,7 @@
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  padding: 183px 24px 0 24px;
+  padding: 146px 24px 0 24px;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
@@ -259,6 +259,7 @@
   background-color: black;
   border-radius: 50%;
   margin-left: 47px;
+  margin-top: 35px;
 }
 
 .about__logo-image {
@@ -273,6 +274,7 @@
   line-height: 46.96px;
   text-transform: uppercase;
   align-self: center;
+  margin-top: 35px;
  }
 
  .about__text {
