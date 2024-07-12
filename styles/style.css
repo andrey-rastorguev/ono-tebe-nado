@@ -237,20 +237,17 @@
 }
 
 .about {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  display: flex;
   padding: 146px 24px 0 24px;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  column-gap: 72px;
-  row-gap: 7px;
+  gap: 72px;
+}
+
+.about__column {
+  display: flex;
+  flex-direction: column;
 }
 
 .about__logo {
-  grid-column: 1;
-  grid-row: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -267,19 +264,15 @@
  }
 
  .about__title {
-  grid-column: 2;
-  grid-row: 1;
   font-size: 40px;
   font-weight: 700;
   line-height: 46.96px;
   text-transform: uppercase;
-  align-self: center;
-  margin-top: 35px;
+  padding-top: 136px;
+  padding-bottom: 99px;
  }
 
  .about__text {
-  grid-column: 2;
-  grid-row: 2;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
