@@ -250,7 +250,7 @@
 .about__column {
   display: flex;
   flex-direction: column;
-  padding-left: 65px;
+  padding-left: 70px;
 }
 
 .about__logo {
