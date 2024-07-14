@@ -108,7 +108,8 @@
 .cover__description {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
+  column-gap: 78px;
   align-items: center;
   z-index: 1;
   padding: 15.5px 50px 51px 78px;
@@ -145,6 +146,8 @@
 
 .lots {
   margin: 180px 24px 0 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .lots__heading {
