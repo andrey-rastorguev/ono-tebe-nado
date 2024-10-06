@@ -91,7 +91,8 @@
 
 .cover__description {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
+  column-gap: 80px; 
   align-items: center;
   padding: 10px 50px 51px 78px;
 }
@@ -135,7 +136,10 @@
 
 .lots {
   width: 100%;
-  padding: 180px 24px 30px;
+  padding-top: 180px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .lots__heading {
@@ -150,10 +154,9 @@
 .lots__card-list {
   display: flex;
   justify-content: space-evenly;
-  gap: 20px;
+  column-gap: 24px;
   flex-wrap: wrap;
   padding-bottom: 30px;
-
 }
 
 .lots__card-list-item {
@@ -227,7 +230,7 @@
 .about {
   width: 100%;
   display: grid;
-  grid-template-columns: min-content auto;
+  grid-template-columns: 1fr 3fr;
   padding: 116px 24px;
 }
 
