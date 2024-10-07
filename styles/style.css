@@ -230,8 +230,13 @@
 .about {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   padding: 116px 24px;
+}
+
+.about__column {
+  display: flex;
+  flex-direction: column;
 }
 
 .about__logo {
@@ -242,7 +247,8 @@
   height: 240px;
   background-color: black;
   border-radius: 120px;
-  margin: 35px 47px;
+  margin-top: 35px;
+  align-self: center;
 }
 
 .about__logo-image {
@@ -255,7 +261,9 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 46.96px;
-  padding: 136px 25px 101px;
+  padding-top: 136px;
+  padding-bottom: 101px;
+  padding-left: 8px;
  }
 
 .about__text {
@@ -265,7 +273,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  padding-left: 25px;
+  padding-left: 8px;
   letter-spacing: 0.002em;
 }
 
