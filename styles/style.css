@@ -228,14 +228,13 @@
 .about {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 49fr 95fr;
   padding: 116px 24px;
 }
 
 .about__column {
   display: flex;
   flex-direction: column;
-  padding-left: 5px;
 }
 
 .about__logo {
