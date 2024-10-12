@@ -64,14 +64,14 @@
 .test_background {
   width: 100%;
   height: 400px;
-  background-image: url("images/cover.jpg");
+  background-image: url(../images/cover.jpg);
 }
 
 .cover {
   position: relative;
   width: 100%;
   color: white;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-position: center;
   background-size: cover;
   text-transform: uppercase;
